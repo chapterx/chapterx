@@ -1,0 +1,357 @@
+/* your styles go here */
+
+@font-face {
+    font-family: stay_writer;
+    src: url(../fonts/StayWriter/StayWriter.ttf);
+}
+
+@font-face {
+    font-family: goudy;
+    src: url(../fonts/GoudyOldStyleRegular/GoudyOldStyleRegular.ttf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/montserrat/Montserrat-Light.otf);
+}
+
+@font-face {
+    font-family: montserrat_lite;
+    src: url(../fonts/montserrat/Montserrat-Hairline.otf);
+}
+
+@font-face {
+    font-family: simplifica;
+    src: url(../fonts/SIMPLIFICA/SIMPLIFICATypeface.ttf);
+}
+
+@font-face {
+    font-family: futura;
+    src: url(../fonts/FuturaMedium/FuturaMedium.otf);
+}
+
+#intro {
+	background-image: url("../img/plain-background.png");
+	background-position: -140px top;
+	background-size: 1400px;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	z-index: 0;
+}
+
+.overlay {
+	opacity: 0;
+}
+
+.intro_container {
+	width: 500px;
+	height: 200px;
+	top: 345px;
+	left: 313px;
+}
+
+.intro_container p {
+	font-size: 35px;
+	font-family: goudy;
+	color: black;
+	text-shadow: none;
+	/* Safari */
+	-webkit-transform: rotate(-18deg);
+	/* Firefox */
+	-moz-transform: rotate(-18deg);
+	/* IE */
+	-ms-transform: rotate(-18deg);
+	/* Opera */
+	-o-transform: rotate(-18deg);
+}
+
+#intro_one {
+
+}
+
+#intro_two {
+	position: relative;
+	top: -65px;
+	left: 115px;
+}
+
+#credits {
+	font-size: 14px;
+}
+
+#intro-logo {
+	position: absolute;
+	width: 670px;
+	top: 70px;
+	left: 115px;
+}
+
+#tagline {
+	position: absolute;
+	width: 400px;
+	top: 325px;
+	left: 340px;
+	opacity: 0.75;
+
+	/*-webkit-filter: blur(5px); /* Safari */
+    /*filter: blur(5px);*/
+}
+
+.intro-logo {
+    visibility: hidden;
+}
+
+.tagline {
+	visibility: hidden;
+}
+
+.fadeInFull {
+    -webkit-animation: animat_show_full 1.5s;
+    animation: animat_show_full 1.5s;
+    visibility: visible !important;
+}
+
+.fadeInPart {
+    -webkit-animation: animat_show_part 1.5s;
+    animation: animat_show_part 1.5s;
+    visibility: visible !important;
+}
+
+.visibleOff {
+	visibility: hidden !important;
+}
+
+@-webkit-keyframes animat_show_full{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+
+@-webkit-keyframes animat_show_part{
+    0%{opacity:0;}
+    100%{opacity:0.75;}
+}
+
+.header a {
+	font-family: goudy;
+}
+
+#header_logo {
+	width: 150px;
+}
+
+.overall_style {
+	text-align: center;
+	font-family: montserrat_lite;
+	font-size: 25px;
+	font-weight: normal;
+}
+
+.mission_first {
+	font-size: 40px;
+}
+
+.mission {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 80px;
+}
+
+.smaller_style {
+	text-align: center;
+	font-family: montserrat_lite;
+	font-size: 18px;
+}
+
+.montage {
+	width: 450px;
+	position: relative;
+	left: -50px;
+}
+
+.service_info {
+	text-align: left;
+	font-size: 15px;
+}
+
+.icon {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 100%;
+	margin-bottom: 20px;
+}
+
+.icon img {
+	display: inline;
+	margin: 0 auto;
+	margin-left: -40px;
+	height: 100%;
+	width: auto;
+}
+
+.faceContainer {
+	width: 130px;
+	height: 130px;
+	overflow: hidden;
+	border-radius: 100%;
+	margin-bottom: 15px;
+}
+
+.faceContainer img {
+	display: inline;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.memberName {
+	font-size: 18px;
+}
+
+.memberTitle h1 {
+	font-size: 10px;
+}
+
+.memberDesc {
+	font-family: montserrat_lite;
+	font-size: 14px;
+}
+
+.col-sm-2 {
+	width: 170px;
+}
+
+.contactInfo {
+	font-family: montserrat_lite;
+	font-size: 20px;
+}
+
+.down {
+	border: solid;
+	border-color: black;
+	border-radius: 100%;
+	position:absolute;
+	left:50%;
+	bottom:30px;
+	margin-top:-25px;
+	margin-left:-25px;
+	height:60px;
+	width:60px;
+	border: solid;
+	border-color: black;
+	border-width: 3px;
+	border-radius: 100%;
+}
+
+.down img {
+	width: 100%;
+}
+
+
+
+
+@media all and (max-width: 991px) {
+	.mission {
+		font-size: 32px;
+	}
+	.mission_one {
+		position: relative;
+		top: -50px;
+		font-size: 28px;
+	}
+	.mission_two {
+		position: relative;
+		top: -220px;
+		font-size: 28px;
+	}
+	.montage {
+		width: 90%;
+		height: auto;
+		left: 5%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: -180px;
+		top: -160px;
+	}
+	.col-sm-3 {
+		width: 100%;
+	}
+	.icon {
+		margin: auto;
+	}
+	.service_title {
+		text-align: center;
+		position: relative;
+		top: 20px;
+		font-size: 35px;
+	}
+	.service_info {
+		position: relative;
+		top: 10px;
+		font-size: 22px;
+		margin-bottom: 40px;
+	}
+	.col-sm-2 {
+		width: 100%;
+	}
+	.faceContainer {
+		margin: auto;
+	}
+	.memberName {
+		text-align: center;
+		position: relative;
+		top: 20px;
+		font-size: 26px;
+	}
+	.memberTitle {
+		position: relative;
+		top: 10px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.memberTitle h1 {
+		font-size: 15px;
+	}
+	.memberDesc {
+		position: relative;
+		top: -10px;
+		margin-bottom: 20px;
+		font-size: 24px;
+	}
+	.contactInfo {
+		font-size: 24px;
+	}
+}
+
+@media all and (max-width: 850px) {
+	#intro {
+		background-image: url("../img/static-background.png");
+		background-position: 35% top;
+		background-size: 850px;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		z-index: 0;
+	}
+	.intro-logo {
+		visibility: hidden !important;
+	}
+	.tagline {
+		visibility: hidden !important;
+	}
+}
+
+@media all and (min-width: 1260px) {
+	#intro {
+		background-image: url("../img/static-background.png");
+		background-position: center top;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		z-index: 0;
+	}
+	.intro-logo {
+		visibility: hidden !important;
+	}
+	.tagline {
+		visibility: hidden !important;
+	}
+}
